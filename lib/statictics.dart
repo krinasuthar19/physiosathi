@@ -67,13 +67,13 @@ class _StatisticsState extends State<Statistics> {
                     Container(
                       width: 30,
                     ),
-                    Text(
+                    const Text(
                       "Statistics",
                       style:
                           TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
                     ),
                     Expanded(child: Container()),
-                    Container(
+                    SizedBox(
                       height: 50,
                       width: 100,
                       child: DropdownButton<String>(
@@ -104,12 +104,12 @@ class _StatisticsState extends State<Statistics> {
                   children: [
                     Container(
                         alignment: Alignment.center,
-                        padding: EdgeInsets.all(10),
+                        padding: const EdgeInsets.all(10),
                         child: CircularPercentIndicator(
                           radius: 100.0,
                           lineWidth: 10.0,
                           percent: 0.5,
-                          center: Column(
+                          center: const Column(
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
                               Text(
@@ -128,21 +128,21 @@ class _StatisticsState extends State<Statistics> {
                         )),
                   ],
                 ),
-                Container(
+                SizedBox(
                   height: 270,
                   width: 300,
                   child: BarChartSample1(),
                 ),
                 Container(
                   height: 60,
-                  margin: EdgeInsets.only(left: 50, right: 50),
+                  margin: const EdgeInsets.only(left: 50, right: 50),
                   child: Row(
                     children: [
                       Column(
                         children: [
                           Row(
                             children: [
-                              Column(
+                              const Column(
                                 children: [
                                   Image(
                                     image:
@@ -154,7 +154,7 @@ class _StatisticsState extends State<Statistics> {
                               Container(
                                 width: 20,
                               ),
-                              Column(
+                              const Column(
                                 children: [
                                   Text(
                                     "2151",
@@ -180,7 +180,7 @@ class _StatisticsState extends State<Statistics> {
                         children: [
                           Row(
                             children: [
-                              Column(
+                              const Column(
                                 children: [
                                   Image(
                                     image:
@@ -192,7 +192,7 @@ class _StatisticsState extends State<Statistics> {
                               Container(
                                 width: 20,
                               ),
-                              Column(
+                              const Column(
                                 children: [
                                   Text(
                                     "10h",

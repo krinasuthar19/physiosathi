@@ -2,6 +2,8 @@ import 'dart:math' as math;
 import 'package:flutter/material.dart';
 
 class CountDownTimerWidget extends StatefulWidget {
+  const CountDownTimerWidget({super.key});
+
   @override
   _CountDownTimerWidgetState createState() => _CountDownTimerWidgetState();
 }
@@ -39,7 +41,7 @@ class _CountDownTimerWidgetState extends State<CountDownTimerWidget>
         return Stack(
           children: <Widget>[
             Padding(
-              padding: EdgeInsets.all(8.0),
+              padding: const EdgeInsets.all(8.0),
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: <Widget>[
@@ -72,9 +74,9 @@ class _CountDownTimerWidgetState extends State<CountDownTimerWidget>
                     children: [
                       Text(
                         timerString,
-                        style: TextStyle(fontSize: 20, color: Colors.black),
+                        style: const TextStyle(fontSize: 20, color: Colors.black),
                       ),
-                      Text(
+                      const Text(
                         "Left",
                         style: TextStyle(fontSize: 20, color: Colors.black),
                       ),
@@ -86,7 +88,7 @@ class _CountDownTimerWidgetState extends State<CountDownTimerWidget>
                   AnimatedBuilder(
                     animation: controller,
                     builder: (context, child) {
-                      return Container(
+                      return SizedBox(
                         width: 50,
                         height: 50,
                         child: ElevatedButton(
@@ -97,9 +99,9 @@ class _CountDownTimerWidgetState extends State<CountDownTimerWidget>
                                 borderRadius: BorderRadius.circular(10.0)),
                           ),
                           onPressed: () {
-                            if (controller.isAnimating)
+                            if (controller.isAnimating) {
                               controller.stop();
-                            else {
+                            } else {
                               controller.reverse(
                                 from: controller.value == 0.0
                                     ? 1.0

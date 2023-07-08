@@ -122,7 +122,7 @@ class _HomeScreenState extends State<HomeScreen> {
                             Navigator.push(
                               context,
                               MaterialPageRoute(
-                                  builder: (context) => LineChartSample5()),
+                                  builder: (context) => const LineChartSample5()),
                             );
                           },
                           child: Column(
@@ -173,7 +173,7 @@ class _HomeScreenState extends State<HomeScreen> {
                             Navigator.push(
                               context,
                               MaterialPageRoute(
-                                  builder: (context) => ChatScreen()),
+                                  builder: (context) => const ChatScreen()),
                             );
                           },
                           child: Column(
@@ -224,7 +224,7 @@ class _HomeScreenState extends State<HomeScreen> {
                             Navigator.push(
                               context,
                               MaterialPageRoute(
-                                  builder: (context) => Appointment()),
+                                  builder: (context) => const Appointment()),
                             );
                           },
                           child: Column(

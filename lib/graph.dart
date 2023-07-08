@@ -3,7 +3,8 @@ import 'package:flutter/material.dart';
 
 class LineChartSample5 extends StatefulWidget {
   const LineChartSample5({
-    Key? key,
+    super.key,
+    Key? color,
     Color? gradientColor1,
     Color? gradientColor2,
     Color? gradientColor3,
@@ -150,10 +151,10 @@ class _LineChartSample5State extends State<LineChartSample5> {
             ),
             lineBarsData: lineBarsData,
             minY: 0,
-            titlesData: FlTitlesData(
+            titlesData: const FlTitlesData(
               show: false,
             ),
-            gridData: FlGridData(
+            gridData: const FlGridData(
               show: false,
             ),
             borderData: FlBorderData(

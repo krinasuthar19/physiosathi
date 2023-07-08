@@ -7,18 +7,20 @@ import 'homescreen.dart';
 import 'nortification.dart';
 
 class BottomNavBar extends StatefulWidget {
+  const BottomNavBar({super.key});
+
   @override
   _BottomNavBarState createState() => _BottomNavBarState();
 }
 
 class _BottomNavBarState extends State<BottomNavBar> {
   int currentIndex = 0;
-  List<Widget> _pages = [
-    HomeScreen(),
-    Appointment(),
-    ChatScreen(),
-    Nortification(),
-    EditProfileScreen()
+  final List<Widget> _pages = [
+    const HomeScreen(),
+    const Appointment(),
+    const ChatScreen(),
+    const Nortification(),
+    const EditProfileScreen()
   ];
   setBottomBarIndex(index) {
     setState(() {
@@ -36,7 +38,7 @@ class _BottomNavBarState extends State<BottomNavBar> {
               onPressed: () {
                 setBottomBarIndex(0);
               },
-              child: Icon(
+              child: const Icon(
                 Icons.home,
                 color: Colors.white,
               ), //icon inside button
@@ -46,7 +48,7 @@ class _BottomNavBarState extends State<BottomNavBar> {
               onPressed: () {
                 setBottomBarIndex(0);
               },
-              child: Icon(
+              child: const Icon(
                 Icons.home,
                 color: Colors.grey,
               ), //icon inside button
@@ -58,10 +60,10 @@ class _BottomNavBarState extends State<BottomNavBar> {
       bottomNavigationBar: BottomAppBar(
         //bottom navigation bar on scaffold
         color: const Color.fromARGB(255, 97, 88, 88),
-        shape: CircularNotchedRectangle(), //shape of notch
+        shape: const CircularNotchedRectangle(), //shape of notch
         notchMargin:
             5, //notche margin between floating button and bottom appbar
-        child: Container(
+        child: SizedBox(
           height: 80,
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,

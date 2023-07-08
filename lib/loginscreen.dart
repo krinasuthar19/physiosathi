@@ -142,7 +142,7 @@ class _LoginScreenState extends State<LoginScreen> {
                     Container(
                       width: 20,
                     ),
-                    Container(
+                    SizedBox(
                       width: 300,
                       child: TextField(
                         controller: _numController,
@@ -201,7 +201,7 @@ class _LoginScreenState extends State<LoginScreen> {
                     Container(
                       width: 20,
                     ),
-                    Container(
+                    SizedBox(
                       width: 300,
                       child: TextField(
                         controller: _passwordController,

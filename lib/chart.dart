@@ -6,7 +6,7 @@ class BarChartSample1 extends StatefulWidget {
   BarChartSample1({super.key});
 
   final Color barBackgroundColor =
-      Color.fromARGB(255, 167, 230, 251).withOpacity(0.3);
+      const Color.fromARGB(255, 167, 230, 251).withOpacity(0.3);
   final Color barColor = Colors.green;
   final Color touchedBarColor = Colors.green;
 
@@ -70,7 +70,7 @@ class BarChartSample1State extends State<BarChartSample1> {
           color: isTouched ? widget.touchedBarColor : barColor,
           width: width,
           borderSide: isTouched
-              ? BorderSide(color: Colors.grey)
+              ? const BorderSide(color: Colors.grey)
               : const BorderSide(
                   color: Color.fromARGB(255, 116, 18, 18), width: 0),
           backDrawRodData: BackgroundBarChartRodData(

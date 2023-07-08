@@ -47,7 +47,7 @@ class _IntroState extends State<Intro> {
                           Navigator.push(
                             context,
                             MaterialPageRoute(
-                                builder: (context) => BottomNavBar()),
+                                builder: (context) => const BottomNavBar()),
                           );
                         },
                         child: const Text(
@@ -136,7 +136,7 @@ class _IntroState extends State<Intro> {
                     onPressed: () {
                       Navigator.push(
                         context,
-                        MaterialPageRoute(builder: (context) => BottomNavBar()),
+                        MaterialPageRoute(builder: (context) => const BottomNavBar()),
                       );
                     },
                     child: const Text(

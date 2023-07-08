@@ -92,12 +92,12 @@ class _NortificationState extends State<Nortification> {
                       Container(
                         width: 20,
                       ),
-                      Column(
+                      const Column(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
                           ImageIcon(
                             AssetImage("assets/images/Ellipse 47.png"),
-                            color: const Color.fromARGB(255, 255, 0, 0),
+                            color: Color.fromARGB(255, 255, 0, 0),
                             size: 20,
                           ),
                         ],
@@ -148,12 +148,12 @@ class _NortificationState extends State<Nortification> {
                       Container(
                         width: 20,
                       ),
-                      Column(
+                      const Column(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
                           ImageIcon(
                             AssetImage("assets/images/Ellipse 47.png"),
-                            color: const Color.fromARGB(255, 255, 0, 0),
+                            color: Color.fromARGB(255, 255, 0, 0),
                             size: 20,
                           ),
                         ],
@@ -204,12 +204,12 @@ class _NortificationState extends State<Nortification> {
                       Container(
                         width: 20,
                       ),
-                      Column(
+                      const Column(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
                           ImageIcon(
                             AssetImage("assets/images/Ellipse 47.png"),
-                            color: const Color.fromARGB(255, 255, 0, 0),
+                            color: Color.fromARGB(255, 255, 0, 0),
                             size: 20,
                           ),
                         ],
@@ -260,12 +260,12 @@ class _NortificationState extends State<Nortification> {
                       Container(
                         width: 20,
                       ),
-                      Column(
+                      const Column(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
                           ImageIcon(
                             AssetImage("assets/images/Ellipse 47.png"),
-                            color: const Color.fromARGB(255, 255, 0, 0),
+                            color: Color.fromARGB(255, 255, 0, 0),
                             size: 20,
                           ),
                         ],
@@ -316,12 +316,12 @@ class _NortificationState extends State<Nortification> {
                       Container(
                         width: 20,
                       ),
-                      Column(
+                      const Column(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
                           ImageIcon(
                             AssetImage("assets/images/Ellipse 47.png"),
-                            color: const Color.fromARGB(255, 255, 0, 0),
+                            color: Color.fromARGB(255, 255, 0, 0),
                             size: 20,
                           ),
                         ],

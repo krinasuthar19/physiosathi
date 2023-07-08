@@ -96,7 +96,7 @@ class _ExercisePlanState extends State<ExercisePlan> {
                     onPressed: () {
                       Navigator.push(
                         context,
-                        MaterialPageRoute(builder: (context) => Statistics()),
+                        MaterialPageRoute(builder: (context) => const Statistics()),
                       );
                     },
                     child: Row(
@@ -154,7 +154,7 @@ class _ExercisePlanState extends State<ExercisePlan> {
                     onPressed: () {
                       Navigator.push(
                         context,
-                        MaterialPageRoute(builder: (context) => Statisticss()),
+                        MaterialPageRoute(builder: (context) => const Statisticss()),
                       );
                     },
                     child: Row(
@@ -198,7 +198,7 @@ class _ExercisePlanState extends State<ExercisePlan> {
                       Navigator.push(
                         context,
                         MaterialPageRoute(
-                            builder: (context) => ExerciseSchedule()),
+                            builder: (context) => const ExerciseSchedule()),
                       );
                     },
                     child: Row(

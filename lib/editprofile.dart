@@ -4,6 +4,8 @@ import 'package:image_picker/image_picker.dart';
 import 'package:intl/intl.dart';
 
 class EditProfileScreen extends StatefulWidget {
+  const EditProfileScreen({super.key});
+
   @override
   _EditProfileScreenState createState() => _EditProfileScreenState();
 }
@@ -45,7 +47,7 @@ class _EditProfileScreenState extends State<EditProfileScreen> {
           child: Center(
             child: Column(
               children: <Widget>[
-                SizedBox(height: 16.0),
+                const SizedBox(height: 16.0),
                 GestureDetector(
                   onTap: _selectImage,
                   child: _imageFile != null
@@ -53,7 +55,7 @@ class _EditProfileScreenState extends State<EditProfileScreen> {
                           radius: 64.0,
                           backgroundImage: FileImage(_imageFile!),
                         )
-                      : CircleAvatar(
+                      : const CircleAvatar(
                           radius: 64.0,
                           child: Icon(Icons.camera_alt),
                         ),
@@ -258,7 +260,7 @@ class _EditProfileScreenState extends State<EditProfileScreen> {
                         _selectedCountry = value;
                       });
                     },
-                    decoration: InputDecoration(
+                    decoration: const InputDecoration(
                       border: InputBorder.none,
                       hintText: null,
                       enabledBorder: OutlineInputBorder(

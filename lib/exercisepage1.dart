@@ -67,7 +67,7 @@ class _StatisticssState extends State<Statisticss> {
                     Container(
                       width: 30,
                     ),
-                    Text(
+                    const Text(
                       "Stretch Breaks",
                       style:
                           TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
@@ -80,16 +80,16 @@ class _StatisticssState extends State<Statisticss> {
                 Container(
                   height: 20,
                 ),
-                Column(
+                const Column(
                   children: [
-                    Container(
+                    SizedBox(
                       width: 300,
                       height: 300,
                       child: CountDownTimerWidget(),
                     ),
                   ],
                 ),
-                Container(
+                const SizedBox(
                   width: double.infinity,
                   height: 250,
                   child: LineChartSample5(),

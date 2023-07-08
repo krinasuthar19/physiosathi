@@ -91,7 +91,7 @@ class _ExerciseScheduleState extends State<ExerciseSchedule> {
                     Container(
                       width: 30,
                     ),
-                    Image(
+                    const Image(
                       image: AssetImage('assets/images/!.png'),
                       height: 30,
                     ),
